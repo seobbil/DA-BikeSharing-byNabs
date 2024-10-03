@@ -12,7 +12,7 @@ st.markdown("""
     /* Title styling */
     .stApp h1 {
         font-family: 'Poppins', sans-serif;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         color: #F0EBCE;
         background-color: #395144;
         padding: 10px;
@@ -32,6 +32,10 @@ st.markdown("""
         border: 1px solid #D5CAB8;
         padding: 10px;
         border-radius: 5px;
+    }
+    /* Justify text */
+    .justify {
+        text-align: justify;
     }
     /* Text and selectbox styling */
     .stSelectbox {
@@ -89,7 +93,7 @@ elif question == "Pertanyaan 2":
 
 # Question 3
 elif question == "Pertanyaan 3":
-    st.header("Bagaimana rata-rata perubahan jumlah penyewa di hari libur?")
+    st.header("Bagaimana rata-rata perubahan jumlah penyewa di hari libur(holiday)?")
     holiday_rental_counts = hour.groupby('holiday')['total_penyewa'].mean()
     colors = ['#4A4947', '#B17457']
     fig, ax = plt.subplots(figsize=(8, 6))
