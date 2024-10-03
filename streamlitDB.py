@@ -12,11 +12,11 @@ st.markdown("""
     /* Title styling */
     .stApp h1 {
         font-family: 'Poppins', sans-serif;
-        font-size: 1.5rem;
+        font-size: 3 rem;
         color: #F0EBCE;
         background-color: #395144;
-        padding: 10px;
-        border-radius: 10px;
+        padding: 15 px;
+        border-radius: 15px;
         text-align: center;
     }
     /* Info box styling */
